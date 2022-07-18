@@ -7,9 +7,9 @@ import numpy as np
 from keras.models import load_model
 
 import os 
-os.chdir('D:/PFE/Agent_conversationnel/chatboot')
+os.chdir('your_base_folder')
 
-model = load_model('D:/PFE/Agent_conversationnel/chatboot/chatbot_model.h5')
+model = load_model('the_model_path')
 import json
 import random
 
@@ -17,7 +17,7 @@ import random
 from nltk.corpus import stopwords
 
 
-intents = json.loads(open('D:/PFE/Agent_conversationnel/chatboot/intents.json').read())
+intents = json.loads(open('path_to_intent_file').read())
 words = pickle.load(open('words.pkl','rb')) #unique word in the corpus
 classes = pickle.load(open('classes.pkl','rb')) #available tag/ classes
 
@@ -42,7 +42,7 @@ def clean_up_sentence(sentence):
 
 # return bag of words array: 0 or 1 for each word in the bag that exists in the sentence
 
-def bow(sentence, words, show_details=True):  ############# here for noanswer
+def bow(sentence, words, show_details=True): 
     sentence_words = clean_up_sentence(sentence)
     # bag of words - matrix of N words, vocabulary matrix
     bag = [0]*len(words)  
