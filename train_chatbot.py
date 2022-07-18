@@ -1,40 +1,31 @@
-import nltk #Natural Language ToolKit
-#NTLK: tools for cleaning up text and preparing it for deep learning algorithms
+import nltk 
 #nltk.download('all')
 nltk.download('punkt')
 #Punkt Sentence Tokenizer. This tokenizer divides a text into a list of sentences,
-nltk.download('wordnet')
-nltk.download('stopwords')
-#WordNet is a lexical database for the English language, which was created by Princeton, and is part of the NLTK corpus.
-#You can use WordNet alongside the NLTK module to find the meanings of words, synonyms, antonyms, and more. Let's cover some examples.
+#nltk.download('wordnet')
+#nltk.download('stopwords')
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 from nltk.corpus import stopwords
 import string
-punctuations=string.punctuation
-
-
-import json #loads json files directly into Python(for simple text serialization)
-import pickle # loads pickle files
-#Pickle (Marshalling/flattening): for serializing/de-serializing any Python object structures(list,tuple,dic,classes,methods...)
-#Serialization:Process of converting a python object into a byte stream to store it in a file/database,transport data over the network or maintain program state across sessions
-#Byte Stream:could represent a text file, or an image, or a live video stream
+import json 
+import pickle
 import numpy as np
 from keras.models import Sequential
 from keras.layers import Dense, Activation, Dropout
-#from keras.optimizers import SGD #doesn't work
+
 from tensorflow.keras.optimizers import SGD
 import random
  
 import os 
-os.chdir('D:/PFE/Agent_conversationnel/chatboot')
+os.chdir('your_base_folder')
 words=[]
 classes = []
 documents = []
 ignore_words = ['?', '!']
-data_file = open('D:/PFE/Agent_conversationnel/chatboot/intents.json').read()
+data_file = open('path_to_the_intents_file').read()
 intents = json.loads(data_file)
-
+punctuations=string.punctuation
 
 #stopwords.words('english')
 stop_words = set(stopwords.words('english')) 
