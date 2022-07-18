@@ -91,7 +91,6 @@
                 "context": [""]
         },
 
-        
         {"tag": "noanswer",
                 "patterns": [],
                 "responses": ["Sorry, can't understand you","I am learning,so can you repeat please", "Please give me more info","Maybe there is a bug,repeat please", "Not sure I understand", "I did not get you"],
@@ -113,18 +112,6 @@
                 "patterns": ["i feel fine", "i am sick", "i am feeling well", "i feel well", "i am well", "i feel awesome", "I am in good shape"],
                 "responses": [ "good to know. how may i assist you then?", "That's great. How can I assists you then?", "happy to know. how can I help you then?", "glad for you. may I help you?"],
                 "context": [""]
-        },
-        
-        {"tag": "pharmacy_search",
-         "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
-         "responses": ["Please provide pharmacy name"],
-         "context": ["search_pharmacy_by_name"]
-        },
-     
-        {"tag": "clinic_search",
-         "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
-         "responses": ["Please provide hospital name or location"],
-         "context": ["search_hospital_by_params"]
         }
         
    ]
