@@ -1,0 +1,131 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "Good morning", "Morning", "afternoon", "evening", "Good afternoon", "Good evening", "How are you?", "How do you do? ", "How have you been", "Is anyone there?","Hey","Hi", "Yo", "Morning","Evening", "Hola", "Hello", "Good day","How is it going?"],
+         "responses": ["Hello, thanks for asking","Hi, can I help you find anything?", "I am very well, How can I help?", "Good to see you again", "Hi there, how can I help?", "good morning","I have been well. How about you?","Nice to meet you" ],
+         "context": [""]
+        },
+
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "next time", "I will be back", "Goodbye", "Nice chatting to you, bye", "Till next time"," Have a nice day", "Bye bye", "Catch you later", "I gotta take off", "See you soon", "I am gone", "It was nice meeting you" ],
+         "responses": ["See you!","Take care","Take it easy", "Have a nice day", "Bye! Come back again soon.","Keep in touch", "Later"," Be careful", "See you round"," Bye, dear", "God bless you", "Glad you came", "Come again" ],
+         "context": [""]
+        },
+
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Many thanks", "I am so grateful", "Thanks a lot", "You're a life saver", "I am grateful", "you save my life",
+                 "You've saved my life","I'm grateful for your assistance", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me", "thanks for your help" ],
+         "responses": ["Happy to help!","That is absolutely fine","Happy to serve you", "It’s alright", "Anytime!",
+                "Glad to have helped", "Cool","You are welcome", "It was nothing", "Not at all", 
+                "Never mention","Glad to be of any assistance" ,"My pleasure"],
+         "context": [""]
+        },
+
+	{"tag": "identity",
+         "patterns": ["What are your interests", "Who are you?","How are you called?","Tell me your name","You got a name","How do you call yourself?","Please state your name",  "What is your goal?", "What can you do?", "What's your name?", "How can I call you?", "Who is this?","Will you tell me your name?", "Can you tell me about yourself?", "Do you have an identity?", "What is your identity?","Tell me about yourself" ],
+         "responses": ["I am ZiDoctor, a healthcare chatbot develop by Zita in order to provide patients with quick assistance.By now I am just specialized in the dentistry field,and can interact in English only.So for any dental assistance you can refer to me,I will glad to help", 
+                "My name is ZiDoctor.A robot developed in the aim of assisting patients with their dental problems.",
+                "You can call me ZiDoctor.How can I help you?", "It's ZiDoctor,a bot developed for healthcare assistance.",  "I am interested in helping you medically"],
+         "context": [""]
+        },
+
+	{"tag": "services",
+         "patterns": ["How could you help me?", "What can you do?", "What help do you provide?", "How can you be helpful?", "What support is offered"],
+         "responses": ["I can guide you through Dental care, Tooth extraction, dental disorders, many other dental Treatments", "I am offering support for oral hygiene, Oral health, General dental care", "We offer different services like: Dental consultation, Dental care, Conservative care, Tooth extraction, Prevention and Advices ,Scaling,and so on", "I can provide you some information related to a good oral hygiene. Or you can take and book an appointment with your dentist for a deep consultation"],
+         "context": [""]
+        },
+        
+ 	 {"tag": "another_treatments",
+         "patterns": ["Is there another treatments offered by the clinic?", "Can I do Oral and Maxillofacial Surge​​o​ns here?", "What are the other treatments that you provide?","Is there other treatments?","I cannot find the service that I am looking up"],
+         "responses": ["We provide many other services. For a full list you can consult our website","You can directly contact our expert to see if the service is available or not.","There are many services, like maxillofacial surgeons,tooth whitening,tooth prosthesis,etc","oral surgery,conservative/restorative dental care, scaling or tartar removing are also the services that we provide"],
+         "context": [""]
+        },
+	
+  	{"tag": "prevention_and_advice",
+         "patterns": ["I have a bad breath", "Can you provide me dental preventions?", "what are you advices for a good dental hygiene?","what are the recommendations for a good dental hygiene?", "prevention from bad breath?","prevention for dental care","I need some prevention for my oral hygiene", "I need some prevention for a good oral hygiene", "How to avoid bad breath?", "Best way to brush my teeth", "I need a good tooth routine", "what to do to maintain my theeth white?", "Is there a diet for teeth?", "How to protect my baby's teeth?","I want a preventive care and oral hygiene","which advices for a good oral?", "tooth whitening advice"],
+         "responses": ["try using a toothbrush designed for children, with a small smear of fluoride toothpaste","Don't forget to brush gently behind the teeth and onto the gums","Brush your teeth and gums last thing at night and at least one other time during the day","Visit your dental team regularly, as often as they recommend","Don't forget to brush your tongue as well, or use a tongue scraper.","Choose a toothbrush with a small- to medium-sized head and soft to medium bristles",
+                "Regular oral exams, usually every 6 months, Routine X-rays, Teeth cleaning, Eat a Balanced Diet"],
+         "context": [""]
+        },
+	
+        {"tag": "tooth_extraction",
+         "patterns": ["Did you provide tooth extraction service?", "I wanna extract my tooth", "Can I extract my tooth in your clinic?", "I have a third molars", "I think my decay has reached deep into the tooth" ],
+         "responses": ["Yeah, we have a service for tooth extraction","then yoshould consult us in order to extract that molar","tooth extraction is provided here","you can take an appointment for extracting this molar"],
+         "context": [""]
+        },
+
+        {"tag": "toothache",
+                "patterns": ["What is a toothache?", "what are toothache symptoms?", "How can I know if I have toothache?", "toothache what is it?"],
+                "responses": ["A toothache is a pain in or around a tooth. Minor toothaches can come from a temporary gum irritation that you can treat at home",
+                "Tooth pain that may be sharp, throbbing, or constant. In some people, pain results only when pressure is applied to the tooth","Fever or headache are some symptoms of toothache",
+                "Foul-tasting drainage from the infected tooth. A bad odor from the mouth."],
+                "context": [""]
+        },
+
+        {"tag": "toothache_prevention",
+                "patterns": ["How can I prevent a toothache?", "How can I avoid toothache", "what can I do in order to prevent toothache?", "what are the preventions for toothache?"],
+                "responses": ["Since most toothaches are the result of tooth decay, good oral hygiene practices can prevent toothaches", "Brush regularly with a fluoride toothpaste. Floss at least once a day. See your dentist twice a year for professional cleaning.", 
+                "Also, eat foods low in sugar and ask your dentist about sealants and fluoride applications."],
+                "context": [""]
+        },
+
+        {"tag": "dental_disease",
+                "patterns": ["What are dental diseases?", "I hear that dry mouth is a dental problem", "did you know some dental disorders?", "what are dental diseases?", "is misaligned teeth a dental problem?", "Dental diseases?", "What are Tooth Disorders?", "can you give me some dental diseases?", "I would like to know some tooth disorders"],
+                "responses": ["Yeah, dry mouth is effectively a dental problem." ,"There are many different problems that can affect your teeth: Tooth decay, Abscess, Impacted tooth, Misaligned teeth, Tooth injuries, Gum Disease, Bad Breath, Sensitive Teeth,Cracked or Broken Teeth, Root Infection, Teeth Grinding",
+                "tooth disorders: Dry Mouth, Enamel Erosion,Root Infection." ],
+                "context": [""]
+        },
+
+        {"tag": "tooth_decay_symptoms", 
+                "patterns": ["I have a bad breath", "there is some bad smell in my mouth" , "What is the reason of black spots on my teeth", "what is the meaning of unpleasant taste in our mouth?"],
+                "responses": [" An unpleasant taste is one symptom of tooth decay. Black or brown spots on your teeth is an another one","Having bad breath means you have tooth decay and you need to visit a dentist", "that is the symptom of tooth decay"],
+                "context": [""]
+        },
+        {"tag": "tooth_decay_advices",
+                "patterns": ["what can I do if I have tooth decay?", "how can I fix my tooth decay?", "is tooth decay treatable?", "I would cure my tooth decay"],
+                "responses": ["You can help to prevent tooth decay with regular (twice daily) brushing and flossing", "Dental care recommends  fillings, crowns, or a root canal.", "The option chosen may be extraction followed by dental implants or dentures"],
+                "context": [""]
+        },
+        {"tag": "Bad_breath_causes",
+                "patterns": ["Do you know the causes of bad breath?","My mouth smell bad", "I have bad breath","what is the reasons of bad breath?", "why does my mouth smell unpleasant?", "why does my mouth smell bad?", "I have a good hygiene but still having bad breath. What is the reason?"],
+                "responses": ["Bad breath can be caused by several different factors like: Poor oral hygiene, Dry mouth, Medication, Infection, Acid reflux, Cancer", "Having bad breath can be due to one or more of the foods you. Spices such as garlic and onion are common culprits", "Because the causes of bad breath are so varied, your dentist will do a complete assessment and prescribe a course of action that best suits your case. "],
+                "context": [""]
+        },
+
+        
+        {"tag": "noanswer",
+                "patterns": [],
+                "responses": ["Sorry, can't understand you","I am learning,so can you repeat please", "Please give me more info","Maybe there is a bug,repeat please", "Not sure I understand", "I did not get you"],
+                "context": ["no text provide"]
+        },
+  
+
+        {"tag": "asking_symptoms",
+                "patterns": ["I am not feeling well", "my teeth hurt","I am shivering.", "I am feeling weak.", "I have weakness in my mouth."],
+                "responses": [ "Okay. can you tell me what's wrong? what are your symptoms?", "Please I need more details. What are your symptoms?.", "is there another symptom?", "Do you have other symptoms?" ],
+                "context": [""]
+        },
+        {"tag": "badhealth",
+                "patterns": ["i feel sick", "i am sick", "i am not feeling well", "i do not feeling well", "i am not well", "My tooth hurts me", "I have a tooth ache"],
+                "responses": [ "okay. can you tell me what's wrong? what are your symptoms?", "okay. can you tell me what's wrong? what are your symptoms?", "Can you tell me what's wrong?", "okay, what are your symptoms?", "how it manifests"],
+                "context": [""]
+        },
+        {"tag": "goodhealth",
+                "patterns": ["i feel fine", "i am sick", "i am feeling well", "i feel well", "i am well", "i feel awesome", "I am in good shape"],
+                "responses": [ "good to know. how may i assist you then?", "That's great. How can I assists you then?", "happy to know. how can I help you then?", "glad for you. may I help you?"],
+                "context": [""]
+        },
+        
+        {"tag": "pharmacy_search",
+         "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
+         "responses": ["Please provide pharmacy name"],
+         "context": ["search_pharmacy_by_name"]
+        },
+     
+        {"tag": "clinic_search",
+         "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
+         "responses": ["Please provide hospital name or location"],
+         "context": ["search_hospital_by_params"]
+        }
+        
+   ]
+}
